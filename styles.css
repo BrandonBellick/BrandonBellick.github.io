@@ -40,12 +40,13 @@ footer{
   align-items: center;
   justify-content: center;
   display: flex;
+  border: 1px solid teal;
   }
   .btn-text {
     font-family:'Nova Flat';
     align-items: center;
     justify-content: center;
-    margin-right: 70px;
+    margin-right: 10px;
     text-transform: uppercase;
     color: #ffb39b;
   }
@@ -53,9 +54,11 @@ footer{
     display: none;
   }
   .duoicon-moon-stars{
-    margin-left: 70px;
+    margin-left: 10px;
+    
   }
   .header-container {
+    border: 1px solid white;
     position: fixed;
     top: 0;
     left: 0;
@@ -75,15 +78,15 @@ footer{
   align-items: center;
 
 }
-h1{ 
+.head1{ 
 margin: 5px;
 padding-left: 5px;
 font-size: 42px;
-font-family: 'Open Sans';
+font-family: 'Nova Flat';
 letter-spacing: .3ch;
-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ff7eee; 
+border: 1px solid purple;
+color: #ffb39b;
+
 }
 
 :root{
@@ -348,10 +351,25 @@ main {
   margin: 0;
   margin-bottom: 5px;
 }
+.duoicon-moon-stars{
+  margin-left: 10px;
+}
 .header-container{
   /*do we need to resize header here to fit the top since the navbar has shifted to bottom of screen for small screens?*/
   left: 0;
+  justify-content: space-evenly;
+  padding-right: 60px;
 }
+.head1{ 
+  left: 0;
+  font-size: 22px;
+  font-family: 'Nova Flat';
+  letter-spacing: .3ch;
+  border: 1px solid cyan;
+  color: #ffb39b;
+  max-width: 25%;
+  }
+  
 }
 
 /*large screens*/
@@ -533,11 +551,14 @@ main {
   align-items: center;
   justify-content: center;
   align-content: center;
+  border: 1px solid tan;
+  margin-right: 10px;
 }
 .draggable-container {
   display: inline-flex;
   margin: 5px;
   cursor: pointer;
+  
 }
 
 @media (max-width: 900px) {
