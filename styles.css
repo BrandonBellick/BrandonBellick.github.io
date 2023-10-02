@@ -357,17 +357,15 @@ main {
 .header-container{
   /*do we need to resize header here to fit the top since the navbar has shifted to bottom of screen for small screens?*/
   left: 0;
-  justify-content: space-evenly;
+  justify-content: space-between;
   
 }
 .head1{ 
   left: 0;
   font-size: 22px;
   font-family: 'Nova Flat';
-  letter-spacing: .3ch;
-  border: 1px solid cyan;
-  color: #ffb39b;
   max-width: 35%;
+  border: 1px solid tan;
   }
   
 }
@@ -558,7 +556,6 @@ main {
   display: inline-flex;
   margin: 5px;
   cursor: pointer;
-  
 }
 
 @media (max-width: 900px) {

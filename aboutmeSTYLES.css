@@ -12,12 +12,13 @@
     --transition-speed: 600ms;
 }
 .name-title {
-    margin: 5px;
-padding-left: 5px;
-font-size: 42px;
-font-family: 'Nova Flat';
-letter-spacing: .3ch;
-color: #ffb39b;
+  margin: 5px;
+  padding-left: 5px;
+  font-size: 42px;
+  font-family: 'Nova Flat';
+  letter-spacing: .3ch;
+  border: 1px solid purple;
+  color: #ffb39b;
 }
 .mana-icon-purple {
     display: none;
@@ -48,7 +49,7 @@ color: #ffb39b;
       font-family:'Nova Flat';
       align-items: center;
       justify-content: center;
-      margin-right: 70px;
+      margin-right: 10px;
       text-transform: uppercase;
       color: #ffb39b;
     }
@@ -56,12 +57,14 @@ color: #ffb39b;
       display: none;
     }
     .duoicon-moon-stars{
-      margin-left: 70px;
+      margin-left: 10px;
     }
     .drag-container {
         align-items: center;
         justify-content: center;
         align-content: center;
+        border: 1px solid teal;
+        margin-right: 10px;
     }
       .draggable-container {
         display: inline-flex;
@@ -69,6 +72,7 @@ color: #ffb39b;
         cursor: pointer;
     }
     .header-container {
+      border: 1px solid violet;
       position: fixed;
       top: 0;
       left: 0;
@@ -90,10 +94,10 @@ color: #ffb39b;
     display: flex;
     align-items: center;
     height: 100px;
-    border: 2px solid #6f42b3;
+    border: 1px solid green;
 }
 .about-1 {
-    font-size: 50px;
+    font-size: 42px;
     width: 60%;
     text-align: center;
     height: 100%;
@@ -104,14 +108,14 @@ color: #ffb39b;
     color: #ffb39b;
 }
 .about-2 {
-  border: 2px solid #6f42b3;
+  border-right: 1px solid #6f42b3;
+  border-left: 1px solid #6f42b3;
   width: 18%;
   text-align: center;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
   color: #ffb39b;
   max-width: 100%;
   max-height: 100%;
@@ -451,8 +455,18 @@ body{
       /*do we need to resize header here to fit the top since the navbar has shifted to bottom of screen for small screens?*/
       left: 0;
     }
+    .name-title {
+      margin: 5px;
+      padding-left: 5px;
+      font-size: 22px;
+      font-family: 'Nova Flat';
+      letter-spacing: .3ch;
+      border: 1px solid cyan;
+      color: #ffb39b;
+      max-width: 35%;
+    }
     .container-1 {
-        margin-top: 7rem;
+        margin-top: 3rem;
         margin-bottom: 5px;
         padding: 10px;
     }
@@ -479,7 +493,7 @@ body{
       transition: opacity var(--transition-speed);
     }
     .container-1 {
-        margin-top: 6rem;
+        margin-top: 4rem;
         margin-bottom: 5px;
     }
     }
