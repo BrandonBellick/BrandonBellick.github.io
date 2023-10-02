@@ -358,7 +358,7 @@ main {
   /*do we need to resize header here to fit the top since the navbar has shifted to bottom of screen for small screens?*/
   left: 0;
   justify-content: space-evenly;
-  padding-right: 60px;
+  
 }
 .head1{ 
   left: 0;
