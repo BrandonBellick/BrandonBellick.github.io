@@ -68,9 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     const vanTwo = element.querySelector('.car-two');
                     const noVan = element.querySelector('.no-car');
                     const recText = element.querySelector('.rectangle-text');
-                    const lightningStrike = element.querySelector('.lightning-animation');
-                    
-                    lightningStrike.style.display = 'flex';
+                   
                     recText.style.display = 'flex';
                     vanOne.style.display = 'none';
                     vanTwo.style.display = 'none';
