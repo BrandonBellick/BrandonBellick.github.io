@@ -40,7 +40,6 @@ footer{
   align-items: center;
   justify-content: center;
   display: flex;
-  border: 1px solid teal;
   }
   .btn-text {
     font-family:'Nova Flat';
@@ -58,7 +57,6 @@ footer{
     
   }
   .header-container {
-    border: 1px solid white;
     position: fixed;
     top: 0;
     left: 0;
@@ -85,7 +83,6 @@ padding-left: 5px;
 font-size: 42px;
 font-family: 'Nova Flat';
 letter-spacing: .3ch;
-border: 1px solid purple;
 color: #ffb39b;
 
 }
@@ -366,7 +363,7 @@ main {
   font-size: 22px;
   font-family: 'Nova Flat';
   max-width: 35%;
-  border: 1px solid tan;
+  
   }
   
 }
@@ -550,8 +547,6 @@ main {
   align-items: center;
   justify-content: center;
   align-content: center;
-  border: 1px solid tan;
-  margin-right: 10px;
 }
 .draggable-container {
   display: inline-flex;
