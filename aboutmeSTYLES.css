@@ -17,7 +17,6 @@
   font-size: 42px;
   font-family: 'Nova Flat';
   letter-spacing: .3ch;
-  border: 1px solid purple;
   color: #ffb39b;
 }
 .mana-icon-purple {
@@ -63,7 +62,6 @@
         align-items: center;
         justify-content: center;
         align-content: center;
-        border: 1px solid teal;
         margin-right: 10px;
     }
       .draggable-container {
@@ -72,7 +70,6 @@
         cursor: pointer;
     }
     .header-container {
-      border: 1px solid violet;
       position: fixed;
       top: 0;
       left: 0;
@@ -86,6 +83,8 @@
       box-sizing: border-box; /* Include padding in height calculation */
       left: 5rem;
       margin-bottom: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.8);
+      
     }
     
 
@@ -94,7 +93,7 @@
     display: flex;
     align-items: center;
     height: 100px;
-    border: 1px solid green;
+    border-bottom: 1px solid #6f42b3;
 }
 .about-1 {
     font-size: 38px;
@@ -172,18 +171,19 @@ footer{
     margin-left: 20px;
 }
 .portrait-list {
+  margin-left: 10px;
   max-width: 55%;
   flex-direction: column;
     display: flex;
     align-items: center;
     height: 100%; /* Fill the container vertically */
-    border: 1px solid yellow;
+    
     
 }
 
 .pic-list {
   
-  border: 1px solid white;
+  
   color: #ffb39b;
   display: flex;
   flex-direction: column;
@@ -252,13 +252,12 @@ footer{
     margin-top: 10px;
     height: 1000px;
     width: 100%;
-    
+    overflow: hidden;
 }
 .about-text {
-    max-width: 50%;
     color: var(--text-secondary);
     background-color: var(--bg-primary);
-    height: 100;
+    height: 100%;
     display: flex;
     font-size: 20px;
     width: 100;
@@ -269,56 +268,66 @@ footer{
 border-left: 1px solid #6f42b3;
 display: flex;
 flex-direction: column;
-max-width: 50%;
 width: 100%;
 max-height: 100%;
 margin-left: 2px;
+
 }
 .secondary-about{
   color: #ffb39b;
   background-color: var(--bg-primary);
   display: flex;
   font-size: 20px;
-  max-width: 50%;
-  height: 100%;
-  width: 100;
-  padding-left: 5px;
-  padding-top: 2px;
-  
-
+  height: 96%;
+  max-height: 100%;
+  width: 100%;
+  padding: 10px;
+  white-space: pre-line;
+  margin-left: 2px;
 }
 .tri-about{
     color: #ffb39b;
     background-color: var(--bg-primary);
     display: flex;
     font-size: 20px;
-    max-width: 50%;
     width: 100%;
-    height: 100%;
-    padding-left:5px;
-    padding-top:2px;
+    height: 96%;
+    
+    padding: 10px;
+    white-space: pre-line;
 }
-
+.fourth-square{
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  background-image: url(bgbWizard.svg);
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+}
 .third-holder{
   display: inline-flex;
   height: 50%;
+  width: 100%;
   gap: 2px;
-  margin-left: 2px;
+  margin-bottom: 2px;
   border-bottom: 1px solid #6f42b3;
   padding-bottom:4px;
+  
 }
 .fourth-about{
-  width:100;
-  margin-top:2px;
+  margin-left: 2px;
+  width:100%;
   background-color: var(--bg-primary);
   color: var(--text-secondary);
   display: flex;
   max-height: 50%;
   height: 100%;
   max-width: 100%;
-  margin-left: 2px;
-  padding-left: 5px;
   padding-top: 2px;
+  align-items: center;
+  justify-content: center;
 }
 /*BELOW IS FROM MAIN STYLES CSS HOME PAGE*/
 
@@ -461,7 +470,7 @@ body{
       font-size: 22px;
       font-family: 'Nova Flat';
       letter-spacing: .3ch;
-      border: 1px solid cyan;
+      
       color: #ffb39b;
       max-width: 35%;
     }
@@ -470,10 +479,50 @@ body{
         margin-bottom: 5px;
         padding: 10px;
     }
+    .container-3 {
+      flex-direction: column;
+      padding: 5px;
+      margin: 5px;
+      justify-content: center;
+      height: auto;
+    }
+    .secondary-holder{
+      border-left: none;
+      border-top: 1px solid #6f42b3;
+      margin-left: 0px;
+    }
+    .third-holder{
+      margin-top: 4px;
+    }
+    .secondary-about{
+      height: auto;
+      background-color: var(--bg-primary);
+    }
+    .tri-about{
+      height: auto;
+      background-color:var(--bg-primary);
+    };
+    }
+    .fourth-about{
+      margin-top: 10px;
+      height: 100%;
+    }
+    .fourth-square{
+      height: 300px;
+      width: 500px;
+      background-color: #141418;
+      text-align: center;
+    }
+    .about-text{
+      height: 100%;
+      width: 100%;
+      margin-left: 3px;
+      margin-bottom: 4px;
+    }
     .pic-list li{
       font-size: 16px;
     }
-    }
+    
     /*large screens*/
     @media only screen and (min-width:600px){
      

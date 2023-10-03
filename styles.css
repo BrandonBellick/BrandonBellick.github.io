@@ -71,6 +71,7 @@ footer{
     padding: 0;
     box-sizing: border-box; /* Include padding in height calculation */
     left: 5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.8);
   }
   
 .header-container{
