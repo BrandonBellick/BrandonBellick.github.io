@@ -1,3 +1,37 @@
+function makeTouchDraggable(element) {
+    let touchStartX, touchStartY, offsetX, offsetY;
+
+    element.addEventListener('touchstart', (e) => {
+        const touch = e.touches[0];
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+        offsetX = 0;
+        offsetY = 0;
+    });
+
+    element.addEventListener('touchmove', (e) => {
+        const touch = e.touches[0];
+        const touchEndX = touch.clientX;
+        const touchEndY = touch.clientY;
+
+        offsetX = touchEndX - touchStartX;
+        offsetY = touchEndY - touchStartY;
+
+        element.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    });
+
+    element.addEventListener('touchend', (e) => {
+        // Handle touch end actions if needed
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const manaIconElement = document.querySelector('.mana-icon'); // Replace with the actual selector for mana-icon.svg
+    makeTouchDraggable(manaIconElement);
+    
+    // Rest of your code...
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const draggableIcon = document.querySelector('.draggable-icon');
     const draggableIconTwo = document.querySelector('.draggable-icon-two');
@@ -68,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     const vanTwo = element.querySelector('.car-two');
                     const noVan = element.querySelector('.no-car');
                     const recText = element.querySelector('.rectangle-text');
-                   
+                    
                     recText.style.display = 'flex';
                     vanOne.style.display = 'none';
                     vanTwo.style.display = 'none';

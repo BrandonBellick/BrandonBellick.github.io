@@ -231,6 +231,12 @@ footer{
 }
 */
 
+a.name-title {
+  text-decoration: none; /* Remove the underline */
+  /* Add any other styling you want for the link */
+  color: #ffb39b; /* Text color */
+  /* Add other styles as needed */
+}
 
 .pic-list :first-child {
     margin-top:100px;
@@ -260,7 +266,8 @@ footer{
     height: 100%;
     display: flex;
     font-size: 20px;
-    width: 100;
+    width: 100%;
+    max-width: 100%;
     padding: 15px;
 }
 
