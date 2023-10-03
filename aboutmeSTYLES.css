@@ -177,13 +177,9 @@ footer{
     display: flex;
     align-items: center;
     height: 100%; /* Fill the container vertically */
-    
-    
 }
 
 .pic-list {
-  
-  
   color: #ffb39b;
   display: flex;
   flex-direction: column;
