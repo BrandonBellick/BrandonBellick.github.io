@@ -218,6 +218,7 @@ a.head1 {
     height: auto;
     
 }
+
 .image1{
     width: 50%;
     max-width: 50%;
@@ -582,7 +583,9 @@ footer{
 .flex-container1 svg {
     margin: 10px;
 }
-
+.f2c1-textblock{
+    border-bottom: 1px solid #6f42b3;
+}
     /* Add any other adjustments for small screens here */
 }
 
