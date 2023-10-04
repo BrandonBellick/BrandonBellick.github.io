@@ -101,6 +101,7 @@
     max-width: 100%;
     flex-direction: row; /* Set the flex direction to row */
     justify-content: flex-start;
+    border: 2px solid #af83f0;
 }
 .patent1 svg,.patent3 svg,.patent4 svg,.patent5 svg,.patent6 svg,.patent7 svg,.patent8 svg,.patent9 svg{
     margin-left: 10px;
@@ -123,6 +124,8 @@ a.head1 {
     height: auto;
     background-color: var(--bg-primary);
     margin-right: 2px;
+    border: 1px solid green;
+    
 }
 .f2c1-container{
     display: flex;
@@ -136,7 +139,7 @@ a.head1 {
 }
 .f2c1-title{
     display: flex;
-    height: 100px;
+    height: auto;
     width: 250px;
     margin-bottom: .5rem;
     text-align: center;
@@ -159,20 +162,19 @@ a.head1 {
     width: 100%;
     height: 420px;
     font-size: 18px;
+    border: 1px solid green;
 }
 .flex2-container2 {
     flex: 2; /* Use flex property to take up available space (2 times as much as .flex-container1) */
     height: auto;
     background-color: var(--bg-primary);
     margin-left: 2px;
-    background-color: teal;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 .f2c2-wrapper{
     display: flex;
-    background-color: aquamarine;
     height: 95%;
     width: 95%;
     flex-direction: column;
@@ -198,7 +200,6 @@ a.head1 {
 }
 .f2c2-workspace{
     display: flex;
-    background-color: #ececec;
     height: 50vh;
     width: 100%;
     justify-content: center;
@@ -220,14 +221,14 @@ a.head1 {
 .f2c2-img .img{
     width: 100%;
     height: auto;
-    border: 1px solid teal;
+    
 }
 .image1{
     width: 50%;
     max-width: 50%;
     height: auto;
 }
-#image1 img {
+#image1 img,#image2 img,#image3 img,#image4 img,#image5 img,#image6 img,#image7 img,#image8 img,#image9 img {
     max-width: 100%;
     max-height: 100%;
     min-height: 80%;
@@ -244,7 +245,7 @@ a.head1 {
 .patent-button {
     font-family: 'Nova Flat';
     font-size: 18px;
-    background: none;
+    background: green;
     width: 50%;
     border: none;
     padding: 0;
@@ -497,6 +498,7 @@ footer{
     /*small screens*/
   
     @media only screen and (max-width: 600px) {
+       /*general ------------ */
         .navbar {
           bottom: 0;
           width: 100vw;
@@ -523,69 +525,61 @@ footer{
           /*do we need to resize header here to fit the top since the navbar has shifted to bottom of screen for small screens?*/
           left: 0;
         }
-        .name-title {
+        .head1 {
           margin: 5px;
           padding-left: 5px;
           font-size: 22px;
           font-family: 'Nova Flat';
           letter-spacing: .3ch;
-          
           color: #ffb39b;
           max-width: 35%;
         }
-        .container-1 {
-            margin-top: 6rem;
-            margin-bottom: 5px;
-            padding: 10px;
-        }
-        .container-3 {
-          flex-direction: column;
-          padding: 5px;
-          margin: 5px;
-          justify-content: center;
-          height: auto;
-        }
-        .secondary-holder{
-          border-left: none;
-          border-top: 1px solid #6f42b3;
-          margin-left: 0px;
-        }
-        .third-holder{
-          margin-top: 4px;
-        }
-        .secondary-about{
-          height: auto;
-          background-color: var(--bg-primary);
-        }
-        .tri-about{
-          height: auto;
-          background-color:var(--bg-primary);
-        };
+        /*general ------------ */
+       /* Default styles for containers */
+
+
+
+
+/* Media query for small screens (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    .flexbox-container-2 {
+        flex-direction: column; /* Stack containers vertically on small screens */
+    }
+
+    /* Reset individual container styles for small screens */
     
-       
-        .fourth-about{
-          margin-top: 10px;
-          height: 100%;
-        }
-        .fourth-square{
-          height: 300px;
-          width: 500px;
-          background-color: #141418;
-          text-align: center;
-        }
-        .about-text{
-          height: 100%;
-          width: 100%;
-          margin-left: 3px;
-          margin-bottom: 4px;
-        }
-        .about-1{
-          border: none;
-          max-width: 57%;
-        }
-        .pic-list li{
-          font-size: 16px;
-        }
+    .flex-container2 {
+        flex: 1;
+        border: none;
+        margin: 0;
+        height: auto;
+        justify-content: initial;
+        align-items: initial;
+    }
+.f2c1-textblock{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 1px solid tan;
+    height: auto;
+}
+.f2c1-title{
+    display: flex;
+    border: 1px solid black;
+    height: auto;
+}
+.patent-button{
+    width: 30%;
+}
+.flex2-container1{
+    background-color: green;
+    margin-bottom: .5rem;
+}
+    /* Add any other adjustments for small screens here */
+}
+
+
       }
       /*large screens*/
     @media only screen and (min-width:600px){
