@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const f2c2Imgs = document.querySelector(".f2c2-imgs");
     
     const image1 = document.getElementById("image1");
+    const image1a = document.getElementById("image1a");
     const image2 = document.getElementById("image2");
     const image3 = document.getElementById("image3");
     const image4 = document.getElementById("image4");
@@ -25,8 +26,9 @@ document.addEventListener("DOMContentLoaded", function() {
     
 
 patent1Button.addEventListener("click", () => {
-    if (image1.style.display === "none" || image1.style.display === "") {
+    if (image1.style.display === "none" || image1.style.display === "" && image1a.style.display === "none" || image1a.style.display === "") {
         image1.style.display = "flex";
+        image1a.style.display = "flex";
         image2.style.display = "none"; // Hide the other image
         image3.style.display = "none";
         image4.style.display = "none"; // Hide the other image
@@ -37,6 +39,7 @@ patent1Button.addEventListener("click", () => {
         image9.style.display = "none";
     } else {
         image1.style.display = "none";
+        image1a.style.display = "none";
     }
 });
 
