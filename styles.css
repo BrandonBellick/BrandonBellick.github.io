@@ -128,7 +128,6 @@ main{
 }
 
 .navbar{
-  
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 200ms ease;
@@ -342,8 +341,18 @@ main{
 .nav-link {
   justify-content: center;
 }
-.navbar:hover .link-text {
+.navbar .link-text{
+  display: flex;
+  font-family: 'Nova Flat';
+}
+.navbar svg{
   display: none;
+}
+.nav-item{
+  border-right: 1px solid #af89f0;
+}
+.nav-item :last-child{
+  border-right: none;
 }
 main {
   margin: 0;
@@ -385,6 +394,7 @@ main {
   display: inline;
   transition: opacity var(--transition-speed);
 }
+
 }
 
 /*.checkbox-container{
