@@ -178,11 +178,11 @@ a.head1 {
 }
 .f2c2-title{
     display: flex;
-    background-color: #141418;
     height: 15vh;
     width: 100%;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .f2c2-text{
     display: flex;
@@ -595,6 +595,9 @@ footer{
 .f2c2-text{
     display: flex;
     font-size: 22px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .f2c2-title{
     display: none;
