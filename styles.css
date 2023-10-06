@@ -7,6 +7,16 @@
   display: flex;
 }
 */
+.hire-me-link {
+  text-decoration: underline;
+  font-weight: bold;
+  color: inherit;
+}
+
+.hire-me-link:hover {
+  color:#af89f0;
+}
+
 footer{
   justify-content: center;
   align-items: center;
