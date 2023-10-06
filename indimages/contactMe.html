@@ -120,31 +120,29 @@
           </div>
         </span>
     </span>    
-        <span class="form-wrapper">
-            <div class="container">
-                <form action="contactform.php">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name..">
-                
-                    <label for="email">Your Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your email..">
-                
-                    <label for="service">Service</label>
-                    <select id="service" name="service">
-                        <option value="australia">Web Development</option>
-                        <option value="canada">Design</option>
-                        <option value="usa">Mystic Arts</option>
-                    </select>
-                
-                    <label for="project">Describe your project</label>
-                    <textarea id="project" name="project" placeholder="What you would like to work together on.." style="height:200px"></textarea>
-                
-                    <input type="submit" value="Submit">
-                </form>
-                
-              </div>
-            </span>
-
+    <div class="form-wrapper">
+        <div class="container">
+            <form action="contactform.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+            
+                <label for="email">Your Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+            
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                    <option value="Web Development">Web Development</option>
+                    <option value="Design">Design</option>
+                    <option value="Mystic Arts">Mystic Arts</option>
+                </select>
+            
+                <label for="project">Describe your project</label>
+                <textarea id="project" name="project" placeholder="What you would like to work together on.." style="height:200px"></textarea>
+            
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+    </div>
     </main>
     
 
