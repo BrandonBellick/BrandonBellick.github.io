@@ -1,0 +1,355 @@
+.form-wrapper{
+    display: flex;
+    margin-top: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: var(--bg-primary);
+    padding: 20px;
+  }
+
+/* DEFAULT STUFF for all pages below ONLY*/
+:root {
+    font-size: 16px;
+    font-family: 'Nova Flat';
+    --text-primary: #cfcfcf;
+    --text-secondary: #ececec;
+    --text-tester: white;
+    --bg-primary: #32323e;
+    --bg-secondary: #141418;
+    --light-text-primary: black;
+    --light-text-secondary: gray;
+    --light-bg-1: white;
+    --transition-speed: 600ms;
+}
+footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+/* HEADER CONTAINER */
+.head1 {
+  margin: 5px;
+  padding-left: 5px;
+  font-size: 42px;
+  font-family: 'Nova Flat';
+  letter-spacing: .3ch;
+  color: #ffb39b;
+}
+.mana-icon-purple {
+    display: none;
+    width: 45px;
+    height: 45px;
+  }
+  .mana-icon{
+    display: flex;
+    color: #ffb39b;
+    width: 45px;
+    height: 45px;
+  }
+  .btn-image-one{
+    background:none;
+    border: none;
+  }
+  .btn-toggle{
+    font-family: sans-serif;
+    font-size: 16px;
+    background: none;
+    border: none;
+    color:var(--text-primary);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+    .btn-text {
+      font-family:'Nova Flat';
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      text-transform: uppercase;
+      color: #ffb39b;
+    }
+    .duoicon-sun{
+      display: none;
+    }
+    .duoicon-moon-stars{
+      margin-left: 10px;
+    }
+    .drag-container {
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        
+    }
+      .draggable-container {
+        display: inline-flex;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .header-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--bg-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 3;
+      padding: 0;
+      box-sizing: border-box; /* Include padding in height calculation */
+      left: 5rem;
+      margin-bottom: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.8);
+    }
+    /* HEADER CONTAINER */
+
+    /*NAVBAR CONTAINER*/
+    body{
+        color: white;
+        background-color: #151515;
+        margin: 0;
+        padding: 0;
+      }
+      body.light-mode{
+        background-color: var(--light-bg-1);
+        color: var(--light-text-primary);
+      }
+      body.light-mode.transparent-bg {
+        background-color: transparent;
+      }
+      body::-webkit-scrollbar{
+        width: 0.25rem;
+      }
+      body::-webkit-scrollbar-track{
+        background: #1e1e24;
+      }
+      body::-webkit-scrollbar-thumb{
+        background: #6649b8
+      }
+    .navbar{
+      
+        position: fixed;
+        background-color: var(--bg-primary);
+        transition: width 200ms ease;
+        z-index: 4;
+      }
+      .navbar-nav{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        z-index: 4;
+      }
+      .nav-item{
+        width: 100%;
+      }
+      .nav-item:last-child {
+        margin-top: auto;
+      }
+      
+      .nav-link{
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        color: var(--text-primary);
+        text-decoration: none;
+        filter: grayscale(100%) opacity(0.7);
+        transition: var(--transition-speed);
+        z-index: 4;
+      }
+      .nav-link:hover{
+        filter: grayscale(0%) opacity(1);
+        background: var(--bg-secondary);
+        color: var(--text-secondary);
+        z-index: 4;
+      }
+      .link-text{
+        display:none;
+        margin-left: 1rem;
+        color: #ffb39b;
+      }
+      .nav-link svg{
+        min-width: 2rem;
+        margin:0 1.5rem;
+      }
+      main{
+        margin-left: 5rem;
+        padding: 1rem;
+      }
+      .logo {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: var(--text-secondary);
+        background: var(--bg-secondary);
+        font-size: 1.5rem;
+        letter-spacing: 0.3ch;
+        width: 100%;
+        
+      }
+      
+      .logo svg {
+        transform: rotate(0deg);
+        transition: var(--transition-speed);
+      }
+      
+      .logo-text
+      {
+        display: inline;
+        position: absolute;
+        left: -999px;
+        transition: var(--transition-speed);
+      }
+      
+      .navbar:hover .logo svg {
+        transform: rotate(-180deg);
+      }
+    /*NAVBAR CONTAINER*/
+
+    /*small screens*/
+  
+    @media only screen and (max-width: 600px) {
+       /*general ------------ */
+        .navbar {
+          bottom: 0;
+          width: 100vw;
+          height: 5rem;
+        }
+        
+        .logo{
+          display:none;
+        }
+        .navbar-nav{
+          flex-direction: row;
+        }
+        .nav-link {
+          justify-content: center;
+        }
+        .navbar:hover .link-text {
+          display: none;
+        }
+        main {
+          margin: 0;
+          margin-bottom: 5px;
+        }
+        .header-container{
+          /*do we need to resize header here to fit the top since the navbar has shifted to bottom of screen for small screens?*/
+          left: 0;
+        }
+        .head1 {
+          margin: 5px;
+          padding-left: 5px;
+          font-size: 22px;
+          font-family: 'Nova Flat';
+          letter-spacing: .3ch;
+          color: #ffb39b;
+          max-width: 35%;
+        }
+
+        .first-title{
+            display: flex;
+            height: auto;
+            width: auto;
+            font-size: 22px;
+            letter-spacing: 1ch;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #ffb39b;
+        }
+        /*general ------------ */
+       /* Default styles for containers */
+    }
+
+    /*large screens*/
+    @media only screen and (min-width:600px){
+     
+        .navbar {
+          top: 0;
+          width: 5rem;
+          height: 100vh;
+      }
+      .navbar:hover{
+        width: 16rem;
+      }
+      .navbar:hover .logo svg{
+        margin-left: 1rem;
+      }
+      .navbar:hover .link-text {
+        display: inline;
+        transition: opacity var(--transition-speed);
+      }
+      .container-1 {
+          margin-top: 4rem;
+          margin-bottom: 5px;
+      }
+      }
+  
+      /* Medium screens */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    /* Your CSS styles for screens between 600px and 800px wide */
+    .head1 {
+        margin: 5px;
+        padding-left: 5px;
+        font-size: 22px;
+        font-family: 'Nova Flat';
+        letter-spacing: .3ch;
+        color: #ffb39b;
+        max-width: 35%;
+      }
+      .first-title{
+        display: flex;
+        height: auto;
+        width: auto;
+        font-size: 22px;
+        letter-spacing: 2ch;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #ffb39b;
+    }
+  }
+  
+  
