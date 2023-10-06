@@ -1,9 +1,51 @@
-
-.form-wrapper{
-    display: block;
+.resume-options-wrapper{
+    display: flex;
+    height: 50px;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
 }
+.options{
+    display: flex;
+    height: 90%;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffb39b;
+}
+.option1{
+    display: flex;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+}
+.option2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+}
+.resume-doc{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.resume{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    background-color: #af89f0;
+}
+
+
+
+
+
+/*    --------------------     */
 
 /* DEFAULT STUFF for all pages below ONLY*/
 :root {
@@ -35,6 +77,7 @@ footer{
   font-family: 'Nova Flat';
   letter-spacing: .3ch;
   color: #ffb39b;
+  text-decoration: none;
 }
 .mana-icon-purple {
     display: none;
@@ -253,8 +296,10 @@ footer{
           letter-spacing: .3ch;
           color: #ffb39b;
           max-width: 35%;
+          text-decoration: none;
+          
         }
-
+        
         .first-title{
             display: flex;
             height: auto;
@@ -306,6 +351,7 @@ footer{
         letter-spacing: .3ch;
         color: #ffb39b;
         max-width: 35%;
+        text-decoration: none;
       }
       .first-title{
         display: flex;
