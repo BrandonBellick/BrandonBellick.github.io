@@ -347,6 +347,22 @@ document.addEventListener('DOMContentLoaded', function () {
     makeDroppable(headerContainer);
     makeDroppable(rectangleContainer)
 });
+function checkPassword() {
+    // Get the entered password from a prompt dialog
+    var enteredPassword = prompt("Enter the password:");
+
+    // Define the correct password (change this to your desired password)
+    var correctPassword = "1234";
+
+    // Check if the entered password matches the correct password
+    if (enteredPassword === correctPassword) {
+        // Redirect to the protected page
+        window.location.href = "protected.html";
+    } else {
+        // Display an error message if the password is incorrect
+        alert("Incorrect password. Please try again.");
+    }
+}
 
 //light/dark mode toggle
 
