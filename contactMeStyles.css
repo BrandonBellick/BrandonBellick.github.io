@@ -215,28 +215,45 @@ footer{
   
     @media only screen and (max-width: 600px) {
        /*general ------------ */
-        .navbar {
-          bottom: 0;
-          width: 100vw;
-          height: 5rem;
-        }
-        .form-wrapper{
-            display: block;
-            width: 100%;
-            margin-top: 8rem;
-        }
-        .logo{
-          display:none;
-        }
-        .navbar-nav{
-          flex-direction: row;
-        }
-        .nav-link {
-          justify-content: center;
-        }
-        .navbar:hover .link-text {
-          display: none;
-        }
+       .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        box-shadow: 0 -2px 2px rgba(0, 0, 0.2, 0.8);
+      }
+      .logo{
+        display:none;
+      }
+      .navbar-nav{
+        flex-direction: row;
+      }
+      .nav-link {
+        justify-content: center;
+        filter: none;
+      }
+      .link-text{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .navbar .link-text{
+        display: flex;
+        font-family: 'Nova Flat';
+        margin: 0;
+      }
+      .navbar svg{
+        display: none;
+        margin: 0;
+        
+      }
+      .nav-item{
+        border-right: 1px solid #af89f0;
+        
+      }
+      .nav-item :last-child{
+        border-right: none;
+      }
         main {
           margin: 0;
           margin-bottom: 5px;
