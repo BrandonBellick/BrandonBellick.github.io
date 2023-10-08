@@ -33,17 +33,17 @@
 @keyframes rotateHorizontal {
     0% {
         transform: rotateY(0deg);
-        fill: #ffb39b;; /* Initial color */
+        fill: var(--light-text-primary);; /* Initial color */
     }
     
     50% {
         transform: rotateY(180deg);
-        fill: var(--text-secondary) /* Change color at 50% of the animation */
+        fill: rgb(190, 25, 25) /* Change color at 50% of the animation */
     }
    
     100% {
         transform: rotateY(360deg);
-        fill: #ffb39b; /* Back to the initial color at the end of the animation */
+        fill: var(--light-text-primary); /* Back to the initial color at the end of the animation */
     }
 }
 
@@ -73,7 +73,7 @@
     font-size: 28px;
     letter-spacing: .4ch;
     text-transform: uppercase;
-    color: #ffb39b;
+    color: var(--light-text-primary);
     border-bottom: 1px solid #6f42b3;
 }
 .fc2-script{
@@ -82,7 +82,7 @@
     height: 80%;
     flex-direction: column;
     justify-content: space-between;
-    color: #ffb39b;
+    color:var(--light-text-primary);
 }
 .inv-pt1,.inv-pt2,.inv-pt3{
     display: flex;
@@ -119,6 +119,179 @@ a.head1 {
     color: #ffb39b; /* Text color */
     /* Add other styles as needed */
   }
+  .flex2-container1 {
+    flex: 1; /* Use flex property to take up available space */
+    height: auto;
+    background-color: var(--bg-secondary);
+    margin-right: 2px;
+}
+.f2c1-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.f2c1-title{
+    display: flex;
+    height: auto;
+    width: 250px;
+    margin-bottom: .5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    color: var(--light-text-primary);
+}
+.f2c1-description{
+    display: flex;
+    height: 100%;
+    width:100%;
+    margin-top: .5rem;
+}
+.f2c1-textblock {
+    display: flex;
+    flex-direction: column;
+    color: var(--light-text-primary);
+    justify-content: space-between;
+    width: 100%;
+    height: 420px;
+    font-size: 18px;
+}
+.flex2-container2 {
+    flex: 2; /* Use flex property to take up available space (2 times as much as .flex-container1) */
+    height: auto;
+    background-color: var(--bg-secondary);
+    margin-left: 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.f2c2-wrapper{
+    display: flex;
+    height: 95%;
+    width: 95%;
+    flex-direction: column;
+}
+.f2c2-title{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.f2c2-text{
+    display: flex;
+    height: 60%;
+    width: 60%;
+    color: var(--light-text-primary);
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    letter-spacing: .3ch;
+}
+.f2c2-workspace{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.f2c2-imgs{
+    display: flex;
+    height: 90%;
+    width: auto;
+    position: relative;
+}
+.f2c2-imgs-2{
+  display: flex;
+  height: 90%;
+  width: auto;
+  
+  position: relative;
+}
+.f2c2-img{
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+.f2c2-img .img{
+    width: 100%;
+    height: auto;
+    
+}
+.f2c2-img-2{
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.f2c2-img-2 .img{
+  width: 100%;
+  height: auto;
+}
+.image1{
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+}
+#image1 img,#image2 img,#image3 img,#image4 img,#image5 img,#image6 img,#image7 img,#image8 img,#image9 img {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 80%;
+    object-fit: contain;
+}
+#image1a {
+  width: auto;
+  max-width: auto;
+  height: auto;
+}
+#image1a img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  padding-left: 20px;
+}
+.img-responsive {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.patent1img{
+    display: none;
+}
+.patent-button {
+    font-family: 'Nova Flat';
+    font-size: 18px;
+    background: none;
+    width: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 0;
+    color: var(--light-text-primary); /* Set the text color */
+  }
+
+  .patent-button:hover {
+    color: #af83f0; /* Change the text color on hover */
+  }
+.patent1{
+    display: flex;
+    margin-top: 2rem;
+}
+.patent9{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.patent1,.patent2,.patent3,.patent4,.patent5,.patent6,.patent7,.patent8,.patent9{
+    display: flex;
+    margin-left: 2rem;
+}
 
 
 
@@ -173,7 +346,7 @@ a.head1 {
       top: 0;
       left: 0;
       right: 0;
-      background-color: var(--bg-primary);
+      background-color: var(--bg-secondary);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -204,7 +377,7 @@ a.head1 {
     --text-secondary: #5a5a5a;
     --text-tester: white;
     --bg-primary: #f1f1f1;
-    --bg-secondary: #dddddd;
+    --bg-secondary: #D8E0E4;
     --light-text-primary: #141418;
     --light-text-secondary: gray;
     --light-bg-1: white;
