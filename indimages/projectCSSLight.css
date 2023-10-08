@@ -1,13 +1,75 @@
-/*  about me light mode */
-/*
-.checkbox-container{
-  border-right: 2px solid teal;
-  border-left: 2px solid teal;
-  height: 50px;
+.first-title{
+  display: flex;
+  height: auto;
+  width: auto;
+  font-size: 42px;
+  letter-spacing: 2ch;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #141418;
+}
+.bigbox1{
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bigbox{
+  margin-top: 5rem;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--bg-secondary);
+}
+.container-title{
+  display: flex;
+  
+  height: auto;
+  color: var(--light-text-primary);
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--bg-secondary);
+  width: 60%;
+  padding-bottom: 10px;
+}
+.container-subtext{
+  color: #141414;
   display: flex;
 }
-*/
+.container-gif{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container-gif img{
+  display: flex;
+  width: 50%;
+  height: 50%;
+}
+footer{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 18px;
+  font-family: 'Nova Flat';
+}
+
 .first-title{
   display: flex;
   height: auto;
