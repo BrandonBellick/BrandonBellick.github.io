@@ -75,7 +75,7 @@
     letter-spacing: .4ch;
     text-transform: uppercase;
     color: var(--light-text-primary);
-    border-bottom: 1px solid #6f42b3;
+    border-bottom: 1px solid #141418;
 }
 .fc2-script{
     display: flex;
@@ -117,7 +117,7 @@
 a.head1 {
     text-decoration: none; /* Remove the underline */
     /* Add any other styling you want for the link */
-    color: #ffb39b; /* Text color */
+    color: #141418; /* Text color */
     /* Add other styles as needed */
   }
   .flex2-container1 {
@@ -362,7 +362,7 @@ a.head1 {
     display: flex;
     align-items: center;
   }
-  .name-title{ 
+  .head1{ 
   margin: 5px;
   padding-left: 5px;
   font-size: 42px;
@@ -636,7 +636,7 @@ a.head1 {
     left: 0;
     justify-content: space-between;
   }
-  .name-title{ 
+  .head1{ 
     left: 0;
     font-size: 22px;
     font-family: 'Nova Flat';
