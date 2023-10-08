@@ -409,6 +409,7 @@ a.name-title {
   justify-content: center;
   align-items: center;
   display: flex;
+  color: #ffb39b;
 }
 
 .sports-script,
@@ -650,7 +651,6 @@ body{
   margin-top: 2px;
   margin-bottom: 2px;
 }
-
 
 .logo{
   display:none;
