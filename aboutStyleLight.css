@@ -728,6 +728,17 @@ footer{
     font-family: 'Nova Flat';
     max-width: 35%;
     }
+    .wrapper{
+      flex-direction: column;
+    }
+    .bullet1,.bullet2,.bullet3{
+      display: none;
+    }
+    .bullet4{
+      display: flex;
+      font-size: 28px;
+      color: #141418;
+    }
   }
   
   /*large screens*/
