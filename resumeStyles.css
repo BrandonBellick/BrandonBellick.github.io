@@ -13,6 +13,7 @@
     justify-content: space-around;
     align-items: center;
     color: #ffb39b;
+    background-color: var(--bg-primary);
 }
 .option1{
     display: flex;
@@ -33,7 +34,6 @@
     margin-top: 2rem;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
 }
 .resume-doc img{
   height: 100%;
@@ -272,10 +272,9 @@ footer{
         display: flex;
         height: auto;
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 5px;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
         flex-direction: column;
     }
        footer{

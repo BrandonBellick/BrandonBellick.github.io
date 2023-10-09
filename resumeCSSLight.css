@@ -43,7 +43,6 @@ footer{
   margin-top: 2rem;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
   
 }
 .resume-doc img{
@@ -368,10 +367,9 @@ footer{
       display: flex;
       height: auto;
       width: 100%;
-      margin-top: 2rem;
+      margin-top: 5px;
       justify-content: center;
       align-items: center;
-      margin-top: 5rem;
       flex-direction: column;
   }
     footer{
