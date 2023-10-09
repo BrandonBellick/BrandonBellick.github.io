@@ -461,6 +461,9 @@ footer{
   .svg-top path {
     stroke: #513992;
   }
+  .duoicon-secondary-layer,.duoicon-primary-layer{
+    fill: #513992;
+  }
   .nav-link:hover{
     filter: grayscale(0%) opacity(1);
     background: var(--bg-primary);
