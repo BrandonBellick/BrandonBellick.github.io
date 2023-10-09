@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     height: 100px;
-    border-bottom: 1px solid #6f42b3;
+    border-bottom: 1px solid #141418;
     margin-top: 4rem;
     margin-bottom: 5px;
     padding: 10px;
@@ -21,8 +21,8 @@
     color: #141418;
 }
 .about-2 {
-  border-right: 1px solid #6f42b3;
-  border-left: 1px solid #6f42b3;
+  border-right: 1px solid #141418;
+  border-left: 1px solid #141418;
   width: 18%;
   text-align: center;
   height: 100%;
@@ -154,10 +154,11 @@ footer{
     text-transform: uppercase;
   }
   .options-wrapper button:hover{
-    color: #af83f0;
+    color: #23b1f3;
   }
   .options-wrapper button.active{
-    color: #af83f0;
+    color: #23b1f3;
+    border-bottom: 1px solid #23b1f3;
   }
   .new-container{
     display: flex;
@@ -212,6 +213,7 @@ footer{
     display: none;
     margin-top: 10px;
     flex-direction: column;
+    
   }
   .fire-wrapper{
     display: flex;
@@ -618,6 +620,43 @@ footer{
   }
   /*small screens*/
   @media only screen and (max-width: 600px) {
+    .bullets{
+      align-items: center;
+      text-align: center;
+      display: inline-flex;
+    }
+    .about-right{
+      display: flex;
+      flex-direction: column;
+    }
+    .about-right-1{
+      margin-right: 0;
+      margin-bottom: 2px;
+    }
+    .about-right-2{
+      margin-left: 0;
+      margin-top: 2px;
+    }
+    .hobby-wrapper{
+    flex-direction: column;
+    }
+    .sports,
+.design,
+.gaming {
+  display: flex;
+  height: auto; /* Allow it to adjust to content */
+  width: auto;
+  flex: 1;
+  background-color: var(--bg-secondary);
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
     footer{
       margin-bottom: 10rem;
     }
@@ -673,7 +712,7 @@ footer{
     display: flex;
     align-items: center;
     height: 100px;
-    border-bottom: 3px solid red;
+    border-bottom: 1px solid #141418;
     margin-top: 6rem;
     margin-bottom: 5px;
     padding: 10px;
