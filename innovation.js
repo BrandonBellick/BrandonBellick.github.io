@@ -23,153 +23,268 @@ document.addEventListener("DOMContentLoaded", function() {
     const image7 = document.getElementById("image7");
     const image8 = document.getElementById("image8");
     const image9 = document.getElementById("image9");
+    const image2a = document.getElementById("image2a");
+    const image3a = document.getElementById("image3a");
+    const image4a = document.getElementById("image4a");
+    const image5a = document.getElementById("image5a");
+    const image6a = document.getElementById("image6a");
+    const image7a = document.getElementById("image7a");
+    const image8a = document.getElementById("image8a");
+    const image9a = document.getElementById("image9a");
     
 
-patent1Button.addEventListener("click", () => {
-    if (image1.style.display === "none" || image1.style.display === "" && image1a.style.display === "none" || image1a.style.display === "") {
-        image1.style.display = "flex";
-        image1a.style.display = "flex";
-        image2.style.display = "none"; // Hide the other image
-        image3.style.display = "none";
-        image4.style.display = "none"; // Hide the other image
-        image5.style.display = "none";
-        image6.style.display = "none"; // Hide the other image
-        image7.style.display = "none";
-        image8.style.display = "none"; // Hide the other image
-        image9.style.display = "none";
-    } else {
-        image1.style.display = "none";
+    function toggleActiveButton(button) {
+        const buttons = document.querySelectorAll('.patent-button');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    }
+
+    patent1Button.addEventListener("click", () => {
+        toggleActiveButton(patent1Button);
+        if (image1.style.display === "none" || image1.style.display === "" && image1a.style.display === "none" || image1a.style.display === "") {
+            image1.style.display = "flex";
+            image1a.style.display = "flex";
+            image2.style.display = "none"; // Hide the other image
+            image3.style.display = "none";
+            image4.style.display = "none"; // Hide the other image
+            image5.style.display = "none";
+            image6.style.display = "none"; // Hide the other image
+            image7.style.display = "none";
+            image8.style.display = "none"; // Hide the other image
+            image9.style.display = "none";
+            image2a.style.display="none";
+            image3a.style.display="none";
+            image4a.style.display="none";
+            image5a.style.display="none";
+            image6a.style.display="none";
+            image7a.style.display="none";
+            image8a.style.display="none";
+            image9a.style.display="none";
+        } else {
+            image1.style.display = "none";
+            image1a.style.display = "none";
+        }
+    });
+
+    patent2Button.addEventListener("click", () => {
+        toggleActiveButton(patent2Button);
+        if (image2.style.display === "none" || image2.style.display === "") {
+            image2.style.display = "flex";
+            image2a.style.display ="flex";
+            image1a.style.display = "none"
+            image1.style.display = "none"; // Hide the other image
+            image3.style.display = "none";
+            image4.style.display = "none"; // Hide the other image
+            image5.style.display = "none";
+            image6.style.display = "none"; // Hide the other image
+            image7.style.display = "none";
+            image8.style.display = "none"; // Hide the other image
+            image9.style.display = "none";
+            image3a.style.display="none";
+            image4a.style.display="none";
+            image5a.style.display="none";
+            image6a.style.display="none";
+            image7a.style.display="none";
+            image8a.style.display="none";
+            image9a.style.display="none";
+        } else {
+            image2.style.display = "none";
+            image2a.style.display="none";
+        }
+    });
+// ... your existing code ...
+
+patent3Button.addEventListener("click", () => {
+    toggleActiveButton(patent3Button);
+    if (image3.style.display === "none" || image3.style.display === "") {
+        image3.style.display = "flex";
+        image3a.style.display = "flex";
+        image1.style.display = "none"; // Hide the other image
         image1a.style.display = "none";
+        image2.style.display = "none"; // Hide the other image
+        image2a.style.display = "none";
+        image4.style.display = "none"; // Hide the other image
+        image4a.style.display = "none";
+        image5.style.display = "none"; // Hide the other image
+        image5a.style.display = "none";
+        image6.style.display = "none"; // Hide the other image
+        image6a.style.display = "none";
+        image7.style.display = "none"; // Hide the other image
+        image7a.style.display = "none";
+        image8.style.display = "none"; // Hide the other image
+        image8a.style.display = "none";
+        image9.style.display = "none"; // Hide the other image
+        image9a.style.display = "none";
+    } else {
+        image3.style.display = "none";
+        image3a.style.display = "none";
     }
 });
 
-patent2Button.addEventListener("click", () => {
-    if (image2.style.display === "none" || image2.style.display === "") {
-        image2.style.display = "flex";
+patent4Button.addEventListener("click", () => {
+    toggleActiveButton(patent4Button);
+    if (image4.style.display === "none" || image4.style.display === "") {
+        image4.style.display = "flex";
+        image4a.style.display = "flex";
         image1.style.display = "none"; // Hide the other image
-        image3.style.display = "none";
-        image4.style.display = "none"; // Hide the other image
-        image5.style.display = "none";
+        image1a.style.display = "none";
+        image2.style.display = "none"; // Hide the other image
+        image2a.style.display = "none";
+        image3.style.display = "none"; // Hide the other image
+        image3a.style.display = "none";
+        image5.style.display = "none"; // Hide the other image
+        image5a.style.display = "none";
         image6.style.display = "none"; // Hide the other image
-        image7.style.display = "none";
+        image6a.style.display = "none";
+        image7.style.display = "none"; // Hide the other image
+        image7a.style.display = "none";
         image8.style.display = "none"; // Hide the other image
-        image9.style.display = "none";
+        image8a.style.display = "none";
+        image9.style.display = "none"; // Hide the other image
+        image9a.style.display = "none";
     } else {
-        image2.style.display = "none";
+        image4.style.display = "none";
+        image4a.style.display = "none";
     }
 });
-    // Add click event listeners to each button
-patent3Button.addEventListener("click", () => {
-    if (image3.style.display === "none" || image3.style.display === "") {
-        image2.style.display = "none";
+
+patent5Button.addEventListener("click", () => {
+    toggleActiveButton(patent5Button);
+    if (image5.style.display === "none" || image5.style.display === "") {
+        image5.style.display = "flex";
+        image5a.style.display = "flex";
         image1.style.display = "none"; // Hide the other image
-        image3.style.display = "flex";
+        image1a.style.display = "none";
+        image2.style.display = "none"; // Hide the other image
+        image2a.style.display = "none";
+        image3.style.display = "none"; // Hide the other image
+        image3a.style.display = "none";
         image4.style.display = "none"; // Hide the other image
-        image5.style.display = "none";
+        image4a.style.display = "none";
         image6.style.display = "none"; // Hide the other image
-        image7.style.display = "none";
+        image6a.style.display = "none";
+        image7.style.display = "none"; // Hide the other image
+        image7a.style.display = "none";
         image8.style.display = "none"; // Hide the other image
-        image9.style.display = "none";
+        image8a.style.display = "none";
+        image9.style.display = "none"; // Hide the other image
+        image9a.style.display = "none";
     } else {
-        image3.style.display = "none";
+        image5.style.display = "none";
+        image5a.style.display = "none";
     }
-    });
-  
-    patent4Button.addEventListener("click", () => {
-        if (image4.style.display === "none" || image4.style.display === "") {
-            image2.style.display = "none";
-            image1.style.display = "none"; // Hide the other image
-            image3.style.display = "none";
-            image4.style.display = "flex"; // Hide the other image
-            image5.style.display = "none";
-            image6.style.display = "none"; // Hide the other image
-            image7.style.display = "none";
-            image8.style.display = "none"; // Hide the other image
-            image9.style.display = "none";
-        } else {
-            image4.style.display = "none";
-        }
-    });
-  
-    patent5Button.addEventListener("click", () => {
-        if (image5.style.display === "none" || image5.style.display === "") {
-            image2.style.display = "none";
-            image1.style.display = "none"; // Hide the other image
-            image3.style.display = "none";
-            image4.style.display = "none"; // Hide the other image
-            image5.style.display = "flex";
-            image6.style.display = "none"; // Hide the other image
-            image7.style.display = "none";
-            image8.style.display = "none"; // Hide the other image
-            image9.style.display = "none";
-        } else {
-            image5.style.display = "none";
-        }
-    });
-  
-    patent6Button.addEventListener("click", () => {
-        if (image6.style.display === "none" || image6.style.display === "") {
-            image2.style.display = "none";
-            image1.style.display = "none"; // Hide the other image
-            image3.style.display = "none";
-            image4.style.display = "none"; // Hide the other image
-            image5.style.display = "none";
-            image6.style.display = "flex"; // Hide the other image
-            image7.style.display = "none";
-            image8.style.display = "none"; // Hide the other image
-            image9.style.display = "none";
-        } else {
-            image6.style.display = "none";
-        }
-    });
-  
-    patent7Button.addEventListener("click", () => {
-        if (image7.style.display === "none" || image7.style.display === "") {
-            image2.style.display = "none";
-            image1.style.display = "none"; // Hide the other image
-            image3.style.display = "none";
-            image4.style.display = "none"; // Hide the other image
-            image5.style.display = "none";
-            image6.style.display = "none"; // Hide the other image
-            image7.style.display = "flex";
-            image8.style.display = "none"; // Hide the other image
-            image9.style.display = "none";
-        } else {
-            image7.style.display = "none";
-        }
-    });
-  
-    patent8Button.addEventListener("click", () => {
-        if (image8.style.display === "none" || image8.style.display === "") {
-            image2.style.display = "none";
-            image1.style.display = "none"; // Hide the other image
-            image3.style.display = "none";
-            image4.style.display = "none"; // Hide the other image
-            image5.style.display = "none";
-            image6.style.display = "none"; // Hide the other image
-            image7.style.display = "none";
-            image8.style.display = "flex"; // Hide the other image
-            image9.style.display = "none";
-        } else {
-            image8.style.display = "none";
-        }
-    });
-  
-    patent9Button.addEventListener("click", () => {
-        if (image9.style.display === "none" || image9.style.display === "") {
-            image2.style.display = "none";
-            image1.style.display = "none"; // Hide the other image
-            image3.style.display = "none";
-            image4.style.display = "none"; // Hide the other image
-            image5.style.display = "none";
-            image6.style.display = "none"; // Hide the other image
-            image7.style.display = "none";
-            image8.style.display = "none"; // Hide the other image
-            image9.style.display = "flex";
-        } else {
-            image9.style.display = "none";
-        }
-    });
+});
+
+patent6Button.addEventListener("click", () => {
+    toggleActiveButton(patent6Button);
+    if (image6.style.display === "none" || image6.style.display === "") {
+        image6.style.display = "flex";
+        image6a.style.display = "flex";
+        image1.style.display = "none"; // Hide the other image
+        image1a.style.display = "none";
+        image2.style.display = "none"; // Hide the other image
+        image2a.style.display = "none";
+        image3.style.display = " none"; // Hide the other image
+        image3a.style.display = "none";
+        image4.style.display = "none"; // Hide the other image
+        image4a.style.display = "none";
+        image5.style.display = "none"; // Hide the other image
+        image5a.style.display = "none";
+        image7.style.display = "none"; // Hide the other image
+        image7a.style.display = "none";
+        image8.style.display = "none"; // Hide the other image
+        image8a.style.display = "none";
+        image9.style.display = "none"; // Hide the other image
+        image9a.style.display = "none";
+    } else {
+        image6.style.display = "none";
+        image6a.style.display = "none";
+    }
+});
+
+patent7Button.addEventListener("click", () => {
+    toggleActiveButton(patent7Button);
+    if (image7.style.display === "none" || image7.style.display === "") {
+        image7.style.display = "flex";
+        image7a.style.display = "flex";
+        image1.style.display = "none"; // Hide the other image
+        image1a.style.display = "none";
+        image2.style.display = "none"; // Hide the other image
+        image2a.style.display = "none";
+        image3.style.display = "none"; // Hide the other image
+        image3a.style.display = "none";
+        image4.style.display = "none"; // Hide the other image
+        image4a.style.display = "none";
+        image5.style.display = "none"; // Hide the other image
+        image5a.style.display = "none";
+        image6.style.display = "none"; // Hide the other image
+        image6a.style.display = "none";
+        image8.style.display = "none"; // Hide the other image
+        image8a.style.display = "none";
+        image9.style.display = "none"; // Hide the other image
+        image9a.style.display = "none";
+    } else {
+        image7.style.display = "none";
+        image7a.style.display = "none";
+    }
+});
+
+patent8Button.addEventListener("click", () => {
+    toggleActiveButton(patent8Button);
+    if (image8.style.display === "none" || image8.style.display === "") {
+        image8.style.display = "flex";
+        image8a.style.display = "flex";
+        image1.style.display = "none"; // Hide the other image
+        image1a.style.display = "none";
+        image2.style.display = "none"; // Hide the other image
+        image2a.style.display = "none";
+        image3.style.display = "none"; // Hide the other image
+        image3a.style.display = "none";
+        image4.style.display = "none"; // Hide the other image
+        image4a.style.display = "none";
+        image5.style.display = "none"; // Hide the other image
+        image5a.style.display = "none";
+        image6.style.display = "none"; // Hide the other image
+        image6a.style.display = "none";
+        image7.style.display = "none"; // Hide the other image
+        image7a.style.display = "none";
+        image9.style.display = "none"; // Hide the other image
+        image9a.style.display = "none";
+    } else {
+        image8.style.display = "none";
+        image8a.style.display = "none";
+    }
+});
+
+patent9Button.addEventListener("click", () => {
+    toggleActiveButton(patent9Button);
+    if (image9.style.display === "none" || image9.style.display === "") {
+        image9.style.display = "flex";
+        image9a.style.display = "flex";
+        image1.style.display = "none"; // Hide the other image
+        image1a.style.display = "none";
+        image2.style.display = "none"; // Hide the other image
+        image2a.style.display = "none";
+        image3.style.display = "none"; // Hide the other image
+        image3a.style.display = "none";
+        image4.style.display = "none"; // Hide the other image
+        image4a.style.display = "none";
+        image5.style.display = "none"; // Hide the other image
+        image5a.style.display = "none";
+        image6.style.display = "none"; // Hide the other image
+        image6a.style.display = "none";
+        image7.style.display = "none"; // Hide the other image
+        image7a.style.display = "none";
+        image8.style.display = "none"; // Hide the other image
+        image8a.style.display = "none";
+    } else {
+        image9.style.display = "none";
+        image9a.style.display = "none";
+    }
+});
+
+// ... your existing code ...
+
   });
   
   document.addEventListener('DOMContentLoaded', function () {
@@ -220,3 +335,4 @@ patent3Button.addEventListener("click", () => {
     // Add a click event listener to the button
     btnToggle.addEventListener("click", toggleMode);
 });
+

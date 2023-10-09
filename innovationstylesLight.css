@@ -260,7 +260,7 @@ a.head1 {
   max-width: auto;
   height: auto;
 }
-#image1a img{
+#image1a img,#image2a img,#image3a img,#image4a img,#image5a img,#image6a img,#image7a img,#image8a img,#image9a img{
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -663,6 +663,32 @@ a.head1 {
     .navbar:hover .link-text {
       display: none;
     }
+    .flexbox-container-2 {
+      flex-direction: column;
+      /* Stack containers vertically on small screens */
+  }
+  .f2c2-workspace{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1px solid green;
+    justify-content: center;
+    align-items: center;
+  }
+  .f2c1-textblock{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+}
+.patent-button{
+  width: 25%;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+
   main {
     margin: 0;
     margin-bottom: 5px;

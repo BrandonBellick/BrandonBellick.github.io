@@ -1,3 +1,4 @@
+
 .flexbox-container-1 {
     margin-top: 2rem;
     margin-bottom: .5rem;
@@ -251,7 +252,7 @@ a.head1 {
   max-width: auto;
   height: auto;
 }
-#image1a img{
+#image1a img,#image2a img,#image3a img,#image4a img,#image5a img,#image6a img,#image7a img,#image8a img,#image9a img{
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -277,9 +278,15 @@ a.head1 {
     color: #ffb39b; /* Set the text color */
   }
 
-  .patent-button:hover {
+  .f2c1-textblock button:hover {
     color: #af83f0; /* Change the text color on hover */
   }
+  .patent-button.active {
+    color: #af83f0;
+    text-decoration: underline;
+}
+
+  
 .patent1{
     display: flex;
     margin-top: 2rem;
@@ -629,6 +636,7 @@ footer{
     margin: 2px;
 }
 
+
 .fc2-title{
     display: flex;
     margin-left: 15px;
@@ -649,7 +657,7 @@ footer{
   height: auto;
   margin-bottom: 10rem;
   
-}
+} 
 
 
 .f2c2-imgs-2{

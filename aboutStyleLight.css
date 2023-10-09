@@ -159,7 +159,7 @@ footer{
   .options-wrapper button.active{
     color: #23b1f3;
     border-bottom: 1px solid #23b1f3;
-  }
+  } 
   .new-container{
     display: flex;
     height: auto;
