@@ -379,6 +379,24 @@ main{
 }
 /*small screens*/
 @media only screen and (max-width: 600px) {
+  .rec-wrapper{
+    flex-direction: column;
+  
+  }
+  .side-rec{
+    flex-direction: column;
+  }
+  .work-together1{
+    display: flex;
+    width: auto;
+    height: 100%;
+    color: #ffb39b;
+    transform: rotate(-5deg); /* Adjust the degree value as needed */
+    font-size: 46px;
+    justify-content: center;
+    text-shadow: -3px 4px 0px #b6490a;
+    margin-top: 1rem;
+  }
   footer{
     margin-bottom: 10rem;
   }
