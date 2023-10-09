@@ -44,13 +44,14 @@ footer{
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  border: 2px solid #141418;
+  
 }
 .resume-doc img{
   height: 100%;
   display: flex;
   object-fit: contain;
   width: 100%;
+  padding: 5px;
 }
 .resume{
   display: flex;
@@ -363,6 +364,16 @@ footer{
   }
   /*small screens*/
   @media only screen and (max-width: 600px) {
+    .resume-doc{
+      display: flex;
+      height: auto;
+      width: 100%;
+      margin-top: 2rem;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+      flex-direction: column;
+  }
     footer{
       margin-bottom: 10rem;
     }
