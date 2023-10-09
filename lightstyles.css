@@ -1,12 +1,9 @@
-/*
-.checkbox-container{
-  border-right: 2px solid teal;
-  border-left: 2px solid teal;
-  height: 50px;
+footer{
   justify-content: center;
-  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
 }
-*/
 .rec-wrapper {
   display: inline-flex;
   flex-direction: row;
