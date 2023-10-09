@@ -26,11 +26,10 @@
   height: auto;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid var(--bg-secondary);
+  border-bottom: 1px solid var(--text-primary);
 }
 .container-title{
   display: flex;
-  
   height: auto;
   color: var(--light-text-primary);
   font-size: 24px;
@@ -38,7 +37,7 @@
   justify-content: center;
   text-align: center;
   margin-bottom: 10px;
-  border-bottom: 1px solid var(--bg-secondary);
+  border-bottom: 1px solid var(--text-primary);
   width: 60%;
   padding-bottom: 10px;
 }
@@ -136,7 +135,7 @@ footer{
   
   :root{
     font-size: 16px;
-    font-family: 'Open Sans';
+    font-family: 'Nova Flat';
     --text-primary: #141418;
     --text-secondary: #5a5a5a;
     --text-tester: white;
@@ -372,6 +371,9 @@ footer{
   }
   /*small screens*/
   @media only screen and (max-width: 600px) {
+    footer{
+      margin-bottom: 10rem;
+    }
     .navbar {
       bottom: 0;
       width: 100vw;
@@ -418,6 +420,18 @@ footer{
   main {
     margin: 0;
     margin-bottom: 5px;
+  }
+  .first-title{
+    display: flex;
+    height: auto;
+    width: auto;
+    font-size: 22px;
+    letter-spacing: 2ch;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #141418;
   }
   .header-container{
     /*do we need to resize header here to fit the top since the navbar has shifted to bottom of screen for small screens?*/
