@@ -393,6 +393,31 @@ main{
 }
 .nav-link {
   justify-content: center;
+  filter: none;
+}
+.link-text{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #141418;
+}
+.navbar .link-text{
+  display: flex;
+  font-family: 'Nova Flat';
+  margin: 0;
+}
+.navbar svg{
+  display: none;
+  margin: 0;
+  
+}
+.nav-item{
+  border-right: 1px solid #141418;
+  
+}
+.nav-item :last-child{
+  border-right: none;
 }
 .navbar:hover .link-text {
   display: none;

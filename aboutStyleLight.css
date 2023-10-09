@@ -615,28 +615,63 @@ footer{
   }
   /*small screens*/
   @media only screen and (max-width: 600px) {
-  .navbar {
-    bottom: 0;
-    width: 100vw;
-    height: 5rem;
-    box-shadow: 0 -2px 1px rgba(0, 0, 0.2, 0.2);
-  }
-  .logo{
-    display:none;
-  }
-  .navbar-nav{
-    flex-direction: row;
-  }
-  .nav-link {
-    justify-content: center;
-  }
-  .navbar:hover .link-text {
-    display: none;
-  }
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+      box-shadow: 0 -2px 1px rgba(0, 0, 0.2, 0.2);
+    }
+    .logo{
+      display:none;
+    }
+    .navbar-nav{
+      flex-direction: row;
+    }
+    .nav-link {
+      justify-content: center;
+      filter: none;
+    }
+    .link-text{
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #141418;
+    }
+    .navbar .link-text{
+      display: flex;
+      font-family: 'Nova Flat';
+      margin: 0;
+    }
+    .navbar svg{
+      display: none;
+      margin: 0;
+      
+    }
+    .nav-item{
+      border-right: 1px solid #141418;
+      
+    }
+    .nav-item :last-child{
+      border-right: none;
+    }
+    .navbar:hover .link-text {
+      display: none;
+    }
   main {
     margin: 0;
     margin-bottom: 5px;
   }
+  .container-1 {
+    width: 100;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 3px solid red;
+    margin-top: 6rem;
+    margin-bottom: 5px;
+    padding: 10px;
+}
   .header-container{
     /*do we need to resize header here to fit the top since the navbar has shifted to bottom of screen for small screens?*/
     left: 0;
@@ -700,32 +735,5 @@ footer{
   }
   
   
-  @media (max-width: 900px) {
-    .container-4,
-    .container-5,
-    .container-6,
-    .container-7,
-    .container-3,
-    .container-2,
-    .container-1 {
-      width: 100%; /* Make them full width on small screens */
-      margin: 5px 0; /* Add some vertical spacing between them */
-    }
   
-    .row-container {
-      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); /* 3 columns on small screens */
-    }
-  }
-  
-  @media (max-width: 750px) {
-    .row-container {
-      grid-template-columns: repeat(auto-fill, minmax(40%, 1fr)); /* 2 columns on even smaller screens */
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .row-container {
-      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Single column on the smallest screens */
-    }
-  }
   
