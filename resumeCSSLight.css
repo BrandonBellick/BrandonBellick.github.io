@@ -35,7 +35,13 @@
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  border: 2px solid #D8E0E4;
+  border: 2px solid #141418;
+}
+.resume-doc img{
+  height: 100%;
+  display: flex;
+  object-fit: contain;
+  width: 100%;
 }
 .resume{
   display: flex;

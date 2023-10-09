@@ -36,6 +36,12 @@
     margin-top: 5rem;
     border: 1px solid white;
 }
+.resume-doc img{
+  height: 100%;
+  display: flex;
+  object-fit: contain;
+  width: 100%;
+}
 .resume{
     display: flex;
     height: 100%;
