@@ -209,39 +209,38 @@ a.head1 {
     width: 100%;
     justify-content: center;
     align-items: center;
-    
+    border: 1px solid black;
 }
 .f2c2-imgs{
     display: flex;
-    height: 90%;
+    height: auto;
     width: auto;
     position: relative;
 }
 .f2c2-imgs-2{
   display: flex;
-  height: 90%;
+  height: auto;
   width: auto;
-  
   position: relative;
+  padding: 0;
 }
 .f2c2-img{
-    width: 100%;
+    width: auto;
     max-height: 100%;
     max-width: 100%;
-    
 }
 .f2c2-img .img{
-    width: 100%;
+    width: auto;
     height: auto;
     
 }
 .f2c2-img-2{
-  width: 100%;
+  width: auto;
   max-width: 100%;
   max-height: 100%;
 }
 .f2c2-img-2 .img{
-  width: 100%;
+  width: auto;
   height: auto;
 }
 .image1{
@@ -264,7 +263,6 @@ a.head1 {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
-  padding-left: 20px;
 }
 .img-responsive {
     max-width: 100%;
@@ -289,6 +287,11 @@ a.head1 {
   .patent-button:hover {
     color: #af83f0; /* Change the text color on hover */
   }
+  .patent-button.active {
+    color: #8237f1;
+    text-decoration: underline;
+}
+
 .patent1{
     display: flex;
     margin-top: 2rem;
