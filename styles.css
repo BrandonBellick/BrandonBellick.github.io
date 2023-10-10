@@ -413,18 +413,33 @@ main{
 
 }
 .side-rec{
-  flex-direction: column;
+  flex-direction: row;
+  border: 1px solid white;
+  width: 100%;
+  
 }
 .work-together1{
   display: flex;
-  width: auto;
+  width: 100%;
   height: 100%;
   color: #ffb39b;
   transform: rotate(-5deg); /* Adjust the degree value as needed */
-  font-size: 46px;
+  font-size: 36px;
   justify-content: center;
   text-shadow: -3px 4px 0px #b6490a;
   margin-top: 1rem;
+  border: 1px solid orange;
+  margin-right: -60px;
+  margin-left: 10px;
+  
+}
+.work-together3{
+  display: flex;
+  width: auto;
+  border: 1px solid green;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
 }
   .navbar {
   bottom: 0;
@@ -437,7 +452,7 @@ main{
   width: 100%;
   height: 100%;
   transform: rotate(-5deg); /* Adjust the degree value as needed */
-  font-size: 50px;
+  font-size: 36px;
   justify-content: center;
   color: #ffb39b;
   text-shadow: -3px 4px 0px #b6490a;
