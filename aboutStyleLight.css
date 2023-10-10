@@ -35,12 +35,12 @@
 }
 
 .bgb-wiz {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   max-width: 100%; /* Set the maximum width for the .bgb-wiz container */
   max-height: 100%; /* Set the maximum height for the .bgb-wiz container */
-
+  
 }
 
 .bgb-wiz img {
@@ -48,7 +48,20 @@
   max-width: 100%; /* Set the maximum width for the image */
   max-height: 100%; /* Set the maximum height for the image */
 }
+.bgb-wiz-black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; /* Set the maximum width for the .bgb-wiz container */
+  max-height: 100%; /* Set the maximum height for the .bgb-wiz container */
+  
+}
 
+.bgb-wiz-black img {
+  object-fit: cover;
+  max-width: 100%; /* Set the maximum width for the image */
+  max-height: 100%; /* Set the maximum height for the image */
+}
 .about-3 {
     
     color: var(--light-text-primary);
@@ -79,11 +92,16 @@ footer{
 .self-portrait{
     display: flex;
     flex: 1;
+    width: 75%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
 }
 .self-portrait img{
   max-width: 100%;
   max-height: 100%;
   width: auto;
+  
 }
 .wrapper{
   display: flex;
@@ -628,6 +646,7 @@ footer{
       text-align: center;
       display: inline-flex;
     }
+    
     .about-right{
       display: flex;
       flex-direction: column;

@@ -134,6 +134,9 @@
   max-width: 100%; /* Set the maximum width for the image */
   max-height: 100%; /* Set the maximum height for the image */
 }
+.bgb-wiz-black{
+  display: none;
+}
 
 .about-3 {
     
@@ -162,6 +165,12 @@ footer{
 .self-portrait{
     display: flex;
     flex: 1;
+    display: flex;
+    flex: 1;
+    width: 75%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
 }
 .self-portrait img{
   max-width: 100%;
@@ -775,6 +784,7 @@ body{
     font-size: 28px;
     color: #ffb39b;
   }
+  
   .pic-list{
     display: flex;
     width: 100%;
