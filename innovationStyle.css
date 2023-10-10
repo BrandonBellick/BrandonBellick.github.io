@@ -205,13 +205,13 @@ a.head1 {
 }
 .f2c2-imgs{
     display: flex;
-    height: 90%;
+    height: auto;
     width: auto;
     position: relative;
 }
 .f2c2-imgs-2{
   display: flex;
-  height: 90%;
+  height: auto;
   width: auto;
   
   position: relative;
