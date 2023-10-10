@@ -639,6 +639,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid teal;
 }
 .image-container-induction .hidden-tarot-1{
   display: none;
