@@ -635,6 +635,11 @@ main {
   max-height: 100%;
   object-fit: contain;
 }
+.default-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .image-container-induction .hidden-tarot-1{
   display: none;
 }

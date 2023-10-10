@@ -375,6 +375,14 @@ footer{
       align-items: center;
       flex-direction: column;
   }
+  .resume-options-wrapper{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin-top: 7rem;
+    justify-content: center;
+    align-items: center;
+}
     footer{
       margin-bottom: 10rem;
     }
