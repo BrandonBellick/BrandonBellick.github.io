@@ -11,7 +11,7 @@ footer{
     margin-top: 2rem;
     margin-bottom: .5rem;
     display: flex;
-    border-bottom: 1px solid #6f42b3;
+    border-bottom: 1px solid #141418;
     width: 100%;
     height: 35vh;
     max-width: 100%;
@@ -21,7 +21,7 @@ footer{
 
 .flex-container1 {
     flex: 1; /* Use flex property to take up available space */
-    border-right: 1px solid #6f42b3;
+    border-right: 1px solid #141418;
     height: auto;
     margin: 5px;
     display: flex;
@@ -59,7 +59,7 @@ footer{
 
 .flex-container2 {
     flex: 2; /* Use flex property to take up available space (2 times as much as .flex-container1) */
-    border-left: 1px solid #6f42b3;
+    border-left: 1px solid #141418;
     height: auto;
     margin: 5px;
     display: flex;
@@ -384,7 +384,7 @@ a.head1 {
   
   :root{
     font-size: 16px;
-    font-family: 'Open Sans';
+    font-family: 'Nova Flat';
     --text-primary: #141418;
     --text-secondary: #5a5a5a;
     --text-tester: white;
@@ -631,6 +631,22 @@ a.head1 {
       max-height: 100%;
       object-fit: cover;
       padding-left: 0;
+    }
+    .flex2-container1{
+      border-bottom: 1px solid #141418;
+      margin-bottom: 5px;
+    }
+    .f2c2-title{
+      display: none;
+    }
+    .f2c1-title{
+      display: none;
+    }
+    .flex-container1{
+      border-right: none;
+    }
+    .fc2-title{
+      margin-left: 10px;
     }
     .navbar {
       bottom: 0;
