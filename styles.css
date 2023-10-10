@@ -583,12 +583,25 @@ main {
   object-fit: contain;
   justify-content: center;
   justify-items: center;
+  align-items: center;
   width: 75%;
   height: 50%;
   border: 1px solid blue;
 }
 .image-container-induction img{
   border: 1px solid green;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+ 
+  width: auto;
+}
+.default-image{
+  max-width: 100%;
+  max-height: 100%;
+  height: 100px;
+  object-fit: contain;
+  display: flex;
 }
 .tarot-container, .tarot-container-2{
   display: none;
@@ -625,6 +638,7 @@ main {
   height: 50%;
 }
 .image-container-induction img,.image-container-resume img {
+  display: flex;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -654,7 +668,7 @@ main {
   display: none;
 }
 .image-container-induction .default-image {
-  display:block;
+  display:flex;
 }
 .image-container-dnd .default-dragon {
   display:block;
