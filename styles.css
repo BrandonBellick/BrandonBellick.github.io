@@ -585,6 +585,10 @@ main {
   justify-items: center;
   width: 75%;
   height: 50%;
+  border: 1px solid blue;
+}
+.image-container-induction img{
+  border: 1px solid green;
 }
 .tarot-container, .tarot-container-2{
   display: none;
@@ -641,7 +645,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid teal;
+  
 }
 .image-container-induction .hidden-tarot-1{
   display: none;
