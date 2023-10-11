@@ -362,8 +362,12 @@ main{
   position: absolute;
   font-size: 32px;
   font-family: 'Nova Flat';
-  color: #ffb39b;
-  text-shadow: 0px 2px 2px #141418;
+  color: #141418;
+  text-shadow: -1px -1px 0 #f1f1f1,  
+               1px -1px 0 #f1f1f1,
+              -1px 1px 0 #f1f1f1,
+               1px 1px 0 #f1f1f1;
+  
 }
 .car-one{
   display: flex;
