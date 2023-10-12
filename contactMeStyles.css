@@ -1,4 +1,23 @@
 
+.explanation{
+  display: flex;
+  width: auto;
+  height:100px;
+  color: #ffb39b;
+  background-color: var(--bg-primary);
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.writing{
+display: flex;
+width: auto;
+margin: 10px;
+height: 90%;
+text-align: center;
+
+}
 .form-wrapper{
     display: block;
     width: 100%;
