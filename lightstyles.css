@@ -1,3 +1,6 @@
+.work-together4{
+  display: none;
+}
 footer{
   justify-content: center;
   align-items: center;
@@ -407,9 +410,9 @@ main{
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
- 
+  align-items: center; 
   object-fit: contain;
+  overflow: hidden;
 }
 
 .line-text{
@@ -459,10 +462,12 @@ main{
   
   }
   .side-rec{
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
   }
   .work-together1{
-    display: flex;
+    display: none;
     width: auto;
     height: 100%;
     color: #ffb39b;
@@ -483,6 +488,15 @@ main{
 }
 .logo{
   display:none;
+}
+.work-together3{
+  display: none;
+}
+.work-together4{
+  display: flex;
+  font-size: 36px;
+  color: #ffb39b;
+  text-shadow: -3px 4px 0px #b6490a;
 }
 .navbar-nav{
   flex-direction: row;
