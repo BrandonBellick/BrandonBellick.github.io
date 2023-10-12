@@ -68,6 +68,9 @@ html, body {
   text-shadow: -3px 4px 0px #b6490a;
   margin-left: 10px;
 }
+.work-together4{
+  display: none;
+}
 .different-font-size {
   /* Apply a different font size to this span */
   font-size: 38px; /* Adjust to your desired font size */
@@ -307,6 +310,7 @@ main{
   color: #ffb39b;
 
 }
+
 .rectangle {
   width: 100%;
   height: 300px; /* Adjust the height as needed */
@@ -318,6 +322,7 @@ main{
   text-align: center;
   position: relative;
   background-color: #07c0c4;
+  /*background-image: url(bgFlyTest.png);*/
   overflow: hidden;
 }
 @keyframes slideIn {
@@ -340,6 +345,7 @@ main{
   transform: translate(-50%, -50%);
   z-index: 2; /* Make sure it's above other elements if needed */
 }
+
 @keyframes moveCloud {
   0% {
     left: -50%; /* Start position is off the left side of the container */
@@ -363,7 +369,7 @@ main{
 }
 @keyframes moveCloudRight {
   0% {
-    left: 0%; /* Start position is off the far right of the container */
+    left: -20%; /* Start position is off the far right of the container */
   }
   100% {
     left: 100%; /* Return to the original position */
@@ -373,7 +379,7 @@ main{
   animation: moveCloudRight 12s linear infinite;
   animation-delay: 3s;
   position: absolute;
-  right: 0%;
+  right: -20%;
   top: 65%;
   height: 30px;
   width: 80px;
@@ -485,24 +491,16 @@ main{
   margin-top: 5px;
 }
 .work-together1{
+  display: none;
+}
+.work-together4{
   display: flex;
-  width: 100%;
-  height: 100%;
-  color: #ffb39b;
-  transform: none; /* Adjust the degree value as needed */
   font-size: 36px;
-  justify-content: center;
+  color: #ffb39b;
   text-shadow: -3px 4px 0px #b6490a;
-  margin-right: -60px;
-  margin-left: 10px;
-  
 }
 .work-together3{
-  display: flex;
-  width: auto;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0;
+  display: none;
 }
   .navbar {
   bottom: 0;
@@ -510,18 +508,7 @@ main{
   height: 5rem;
   box-shadow: 0 -2px 2px rgba(0, 0, 0.2, 0.8);
 }
-.work-together3{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  font-size: 36px;
-  justify-content: center;
-  color: #ffb39b;
-  text-shadow: -3px 4px 0px #b6490a;
-  margin-left: 10px;
-  margin-top: 0;
-  transform: none;
-}
+
 .logo{
   display:none;
 }
@@ -676,6 +663,13 @@ main {
   width: auto;
 }
 .default-image{
+  max-width: 100%;
+  max-height: 100%;
+  height: 200px;
+  object-fit: contain;
+  display: flex;
+}
+.unicorn-black{
   max-width: 100%;
   max-height: 100%;
   height: 200px;
