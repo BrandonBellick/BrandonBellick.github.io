@@ -2,13 +2,14 @@
 .explanation{
   display: flex;
   width: auto;
-  height:100px;
+  height:auto;
   color: #ffb39b;
   background-color: var(--bg-primary);
   margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  
 }
 .writing{
 display: flex;
@@ -98,6 +99,7 @@ footer{
         align-items: center;
         justify-content: center;
         align-content: center;
+        display: flex;
         
     }
       .draggable-container {
@@ -290,7 +292,11 @@ footer{
           color: #ffb39b;
           max-width: 35%;
         }
-
+        .form-wrapper{
+          display: block;
+          width: 100%;
+          margin-top: 7rem;
+        }
         .first-title{
             display: flex;
             height: auto;

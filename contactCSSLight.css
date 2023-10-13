@@ -1,3 +1,22 @@
+.explanation{
+  display: flex;
+  width: auto;
+  height:au;
+  color: #141418;
+  background-color: var(--bg-secondary);
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.writing{
+display: flex;
+width: auto;
+margin: 10px;
+height: 90%;
+text-align: center;
+
+}
 .form-wrapper{
   display: block;
   width: 100%;
@@ -418,6 +437,7 @@ footer{
     align-items: center;
     justify-content: center;
     align-content: center;
+    display: flex;
   }
   .draggable-container {
     display: inline-flex;
