@@ -321,8 +321,7 @@ main{
   object-fit: cover;
   text-align: center;
   position: relative;
-  background-color: #07c0c4;
-  /*background-image: url(bgFlyTest.png);*/
+  background: linear-gradient( #07c0c4,#b4dbe2);
   overflow: hidden;
 }
 @keyframes slideIn {
