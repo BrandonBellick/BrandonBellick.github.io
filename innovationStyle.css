@@ -392,7 +392,7 @@ footer{
         align-items: center;
         justify-content: center;
         align-content: center;
-        
+        display: flex;
     }
       .draggable-container {
         display: inline-flex;
